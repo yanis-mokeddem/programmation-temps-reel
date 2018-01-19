@@ -1,0 +1,406 @@
+\section{Référence du fichier thread.\+h}
+\label{thread_8h}\index{thread.\+h@{thread.\+h}}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 0
+\subsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf train}
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct {\bf train} {\bf train}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf initialise} ()
+\item 
+void {\bf prochain\+\_\+pas\+\_\+\+T1} ()
+\item 
+void {\bf prochain\+\_\+pas\+\_\+\+T2} ()
+\item 
+void {\bf prochain\+\_\+pas\+\_\+\+T3} ()
+\item 
+int {\bf time\+\_\+train\+\_\+\+T1} ()
+\item 
+int {\bf time\+\_\+train\+\_\+\+T2} ()
+\item 
+int {\bf time\+\_\+train\+\_\+\+T3} ()
+\item 
+void {\bf deplacement\+\_\+\+T1} ()
+\item 
+void {\bf deplacement\+\_\+\+T2} ()
+\item 
+void {\bf deplacement\+\_\+\+T3} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+mutex\+\_\+t {\bf verrou\+\_\+t1} = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER
+\item 
+pthread\+\_\+mutex\+\_\+t {\bf verrou\+\_\+t2} = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER
+\item 
+pthread\+\_\+mutex\+\_\+t {\bf verrou\+\_\+t3} = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER
+\item 
+pthread\+\_\+mutex\+\_\+t {\bf fifo} = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER
+\item 
+{\bf train} {\bf T1}
+\item 
+{\bf train} {\bf T2}
+\item 
+{\bf train} {\bf T3}
+\item 
+char {\bf tab\+T1} [4][2]
+\item 
+char {\bf tab\+T2} [5][2]
+\item 
+char {\bf tab\+T3} [5][2]
+\item 
+int {\bf t1\+\_\+i} =0
+\item 
+int {\bf t1\+\_\+j} =0
+\item 
+int {\bf t2\+\_\+i} =0
+\item 
+int {\bf t2\+\_\+j} =0
+\item 
+int {\bf t3\+\_\+i} =0
+\item 
+int {\bf t3\+\_\+j} =0
+\item 
+int {\bf time\+\_\+\+T1} =0
+\item 
+int {\bf time\+\_\+\+T2} =0
+\item 
+int {\bf time\+\_\+\+T3} =0
+\item 
+int {\bf nb\+\_\+srand} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des définitions de type}
+\index{thread.\+h@{thread.\+h}!train@{train}}
+\index{train@{train}!thread.\+h@{thread.\+h}}
+\subsubsection[{train}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf train} {\bf train}}\label{thread_8h_ac5e7144c0ff0fd46a7f4a5ff8cab1e72}
+
+
+\subsection{Documentation des fonctions}
+\index{thread.\+h@{thread.\+h}!deplacement\+\_\+\+T1@{deplacement\+\_\+\+T1}}
+\index{deplacement\+\_\+\+T1@{deplacement\+\_\+\+T1}!thread.\+h@{thread.\+h}}
+\subsubsection[{deplacement\+\_\+\+T1()}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+\+T1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_a048e6ad5e3cd27b0c79476149f67980c}
+fonction qui va gerer les deplacements du premier train 
+
+Références collision\+\_\+\+T1, collision\+\_\+\+T2, collision\+\_\+\+T3, fifo, train\+::liaison1, train\+::liaison2, prochain\+\_\+pas\+\_\+\+T1(), T1, t1\+\_\+i, T2, T3, time\+\_\+\+T1, time\+\_\+train\+\_\+\+T1(), et verrou\+\_\+t1.
+
+
+
+Référencé par deplacement(), et time\+\_\+train\+\_\+\+T3().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 1
+
+
+\index{thread.\+h@{thread.\+h}!deplacement\+\_\+\+T2@{deplacement\+\_\+\+T2}}
+\index{deplacement\+\_\+\+T2@{deplacement\+\_\+\+T2}!thread.\+h@{thread.\+h}}
+\subsubsection[{deplacement\+\_\+\+T2()}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+\+T2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_ad88c2d8f33c81d70265ea81dc11383d2}
+
+
+Références collision\+\_\+\+T1, collision\+\_\+\+T2, collision\+\_\+\+T3, fifo, train\+::liaison1, train\+::liaison2, prochain\+\_\+pas\+\_\+\+T2(), T1, T2, t2\+\_\+i, T3, time\+\_\+\+T2, time\+\_\+train\+\_\+\+T2(), et verrou\+\_\+t2.
+
+
+
+Référencé par deplacement(), et time\+\_\+train\+\_\+\+T3().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 2
+
+
+\index{thread.\+h@{thread.\+h}!deplacement\+\_\+\+T3@{deplacement\+\_\+\+T3}}
+\index{deplacement\+\_\+\+T3@{deplacement\+\_\+\+T3}!thread.\+h@{thread.\+h}}
+\subsubsection[{deplacement\+\_\+\+T3()}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+\+T3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_a70930ab85f760e6326787315ced718f2}
+
+
+Références collision\+\_\+\+T1, collision\+\_\+\+T2, collision\+\_\+\+T3, fifo, train\+::liaison1, train\+::liaison2, prochain\+\_\+pas\+\_\+\+T3(), T1, T2, T3, t3\+\_\+i, time\+\_\+\+T3, time\+\_\+train\+\_\+\+T3(), et verrou\+\_\+t3.
+
+
+
+Référencé par deplacement(), et time\+\_\+train\+\_\+\+T3().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 3
+
+
+\index{thread.\+h@{thread.\+h}!initialise@{initialise}}
+\index{initialise@{initialise}!thread.\+h@{thread.\+h}}
+\subsubsection[{initialise()}]{\setlength{\rightskip}{0pt plus 5cm}void initialise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_a18abf8b19283101238a77c9e6865b673}
+fonction qui initialise le parcours dans un tableau a 2 dimensions 
+
+Références train\+::liaison1, train\+::liaison2, tab\+T1, tab\+T2, et tab\+T3.
+
+
+
+Référencé par main().
+
+\index{thread.\+h@{thread.\+h}!prochain\+\_\+pas\+\_\+\+T1@{prochain\+\_\+pas\+\_\+\+T1}}
+\index{prochain\+\_\+pas\+\_\+\+T1@{prochain\+\_\+pas\+\_\+\+T1}!thread.\+h@{thread.\+h}}
+\subsubsection[{prochain\+\_\+pas\+\_\+\+T1()}]{\setlength{\rightskip}{0pt plus 5cm}void prochain\+\_\+pas\+\_\+\+T1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_aff6bc32e57d47216217ebbb7890bf4af}
+prochain pas du train 1 
+
+Références train\+::liaison1, train\+::liaison2, t1\+\_\+i, t1\+\_\+j, et tab\+T1.
+
+
+
+Référencé par deplacement\+\_\+\+T1().
+
+\index{thread.\+h@{thread.\+h}!prochain\+\_\+pas\+\_\+\+T2@{prochain\+\_\+pas\+\_\+\+T2}}
+\index{prochain\+\_\+pas\+\_\+\+T2@{prochain\+\_\+pas\+\_\+\+T2}!thread.\+h@{thread.\+h}}
+\subsubsection[{prochain\+\_\+pas\+\_\+\+T2()}]{\setlength{\rightskip}{0pt plus 5cm}void prochain\+\_\+pas\+\_\+\+T2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_a469e2bd2c231515df970dba87c13e16c}
+
+
+Références train\+::liaison1, train\+::liaison2, t2\+\_\+i, t2\+\_\+j, et tab\+T2.
+
+
+
+Référencé par deplacement\+\_\+\+T2().
+
+\index{thread.\+h@{thread.\+h}!prochain\+\_\+pas\+\_\+\+T3@{prochain\+\_\+pas\+\_\+\+T3}}
+\index{prochain\+\_\+pas\+\_\+\+T3@{prochain\+\_\+pas\+\_\+\+T3}!thread.\+h@{thread.\+h}}
+\subsubsection[{prochain\+\_\+pas\+\_\+\+T3()}]{\setlength{\rightskip}{0pt plus 5cm}void prochain\+\_\+pas\+\_\+\+T3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_a170e106aa147f3835461922f4bbe14e5}
+
+
+Références train\+::liaison1, train\+::liaison2, t3\+\_\+i, t3\+\_\+j, et tab\+T3.
+
+
+
+Référencé par deplacement\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!time\+\_\+train\+\_\+\+T1@{time\+\_\+train\+\_\+\+T1}}
+\index{time\+\_\+train\+\_\+\+T1@{time\+\_\+train\+\_\+\+T1}!thread.\+h@{thread.\+h}}
+\subsubsection[{time\+\_\+train\+\_\+\+T1()}]{\setlength{\rightskip}{0pt plus 5cm}int time\+\_\+train\+\_\+\+T1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_a97ecb557842d66a63215cdf696f6d993}
+temps du train 1 
+
+Références nb\+\_\+srand, et time\+\_\+\+T1.
+
+
+
+Référencé par deplacement\+\_\+\+T1().
+
+\index{thread.\+h@{thread.\+h}!time\+\_\+train\+\_\+\+T2@{time\+\_\+train\+\_\+\+T2}}
+\index{time\+\_\+train\+\_\+\+T2@{time\+\_\+train\+\_\+\+T2}!thread.\+h@{thread.\+h}}
+\subsubsection[{time\+\_\+train\+\_\+\+T2()}]{\setlength{\rightskip}{0pt plus 5cm}int time\+\_\+train\+\_\+\+T2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_a4d2b882cc832c29fc37db431e3c5ff03}
+
+
+Références nb\+\_\+srand, et time\+\_\+\+T2.
+
+
+
+Référencé par deplacement\+\_\+\+T2().
+
+\index{thread.\+h@{thread.\+h}!time\+\_\+train\+\_\+\+T3@{time\+\_\+train\+\_\+\+T3}}
+\index{time\+\_\+train\+\_\+\+T3@{time\+\_\+train\+\_\+\+T3}!thread.\+h@{thread.\+h}}
+\subsubsection[{time\+\_\+train\+\_\+\+T3()}]{\setlength{\rightskip}{0pt plus 5cm}int time\+\_\+train\+\_\+\+T3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{thread_8h_aecb2e7d539e0265c8fa7dfbfcd3da1de}
+
+
+Références deplacement\+\_\+\+T1(), deplacement\+\_\+\+T2(), deplacement\+\_\+\+T3(), nb\+\_\+srand, et time\+\_\+\+T3.
+
+
+
+Référencé par deplacement\+\_\+\+T3().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 4
+
+
+
+
+\subsection{Documentation des variables}
+\index{thread.\+h@{thread.\+h}!fifo@{fifo}}
+\index{fifo@{fifo}!thread.\+h@{thread.\+h}}
+\subsubsection[{fifo}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutex\+\_\+t fifo = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}\label{thread_8h_a5d1b44db51f489f2280cad0f61af1171}
+
+
+Référencé par deplacement\+\_\+\+T1(), deplacement\+\_\+\+T2(), deplacement\+\_\+\+T3(), et main().
+
+\index{thread.\+h@{thread.\+h}!nb\+\_\+srand@{nb\+\_\+srand}}
+\index{nb\+\_\+srand@{nb\+\_\+srand}!thread.\+h@{thread.\+h}}
+\subsubsection[{nb\+\_\+srand}]{\setlength{\rightskip}{0pt plus 5cm}int nb\+\_\+srand =0}\label{thread_8h_ad60aefec97df52accbacfdb97c21b66e}
+
+
+Référencé par time\+\_\+train\+\_\+\+T1(), time\+\_\+train\+\_\+\+T2(), et time\+\_\+train\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!T1@{T1}}
+\index{T1@{T1}!thread.\+h@{thread.\+h}}
+\subsubsection[{T1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf train} T1}\label{thread_8h_af7563d32dc157f89b5e9b386e7734975}
+
+
+Référencé par deplacement\+\_\+\+T1(), deplacement\+\_\+\+T2(), et deplacement\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!t1\+\_\+i@{t1\+\_\+i}}
+\index{t1\+\_\+i@{t1\+\_\+i}!thread.\+h@{thread.\+h}}
+\subsubsection[{t1\+\_\+i}]{\setlength{\rightskip}{0pt plus 5cm}int t1\+\_\+i =0}\label{thread_8h_af6ffa3874789c1110bfa3560595be366}
+
+
+Référencé par deplacement\+\_\+\+T1(), et prochain\+\_\+pas\+\_\+\+T1().
+
+\index{thread.\+h@{thread.\+h}!t1\+\_\+j@{t1\+\_\+j}}
+\index{t1\+\_\+j@{t1\+\_\+j}!thread.\+h@{thread.\+h}}
+\subsubsection[{t1\+\_\+j}]{\setlength{\rightskip}{0pt plus 5cm}int t1\+\_\+j =0}\label{thread_8h_ad42771e3cfc13cf554e80f172ee24850}
+
+
+Référencé par prochain\+\_\+pas\+\_\+\+T1().
+
+\index{thread.\+h@{thread.\+h}!T2@{T2}}
+\index{T2@{T2}!thread.\+h@{thread.\+h}}
+\subsubsection[{T2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf train} T2}\label{thread_8h_a2f9633591cf59fbea33044d61e3b12df}
+
+
+Référencé par deplacement\+\_\+\+T1(), deplacement\+\_\+\+T2(), et deplacement\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!t2\+\_\+i@{t2\+\_\+i}}
+\index{t2\+\_\+i@{t2\+\_\+i}!thread.\+h@{thread.\+h}}
+\subsubsection[{t2\+\_\+i}]{\setlength{\rightskip}{0pt plus 5cm}int t2\+\_\+i =0}\label{thread_8h_a7eb268dc73344b7b5bb1c4ad1e9b8029}
+
+
+Référencé par deplacement\+\_\+\+T2(), et prochain\+\_\+pas\+\_\+\+T2().
+
+\index{thread.\+h@{thread.\+h}!t2\+\_\+j@{t2\+\_\+j}}
+\index{t2\+\_\+j@{t2\+\_\+j}!thread.\+h@{thread.\+h}}
+\subsubsection[{t2\+\_\+j}]{\setlength{\rightskip}{0pt plus 5cm}int t2\+\_\+j =0}\label{thread_8h_ab88718510b8996c0a7add100d4bc2c26}
+
+
+Référencé par prochain\+\_\+pas\+\_\+\+T2().
+
+\index{thread.\+h@{thread.\+h}!T3@{T3}}
+\index{T3@{T3}!thread.\+h@{thread.\+h}}
+\subsubsection[{T3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf train} T3}\label{thread_8h_a79960566a6908cd12bcfec57c02e4981}
+
+
+Référencé par deplacement\+\_\+\+T1(), deplacement\+\_\+\+T2(), et deplacement\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!t3\+\_\+i@{t3\+\_\+i}}
+\index{t3\+\_\+i@{t3\+\_\+i}!thread.\+h@{thread.\+h}}
+\subsubsection[{t3\+\_\+i}]{\setlength{\rightskip}{0pt plus 5cm}int t3\+\_\+i =0}\label{thread_8h_ade48de6836e075d2438d4318c2d384e1}
+
+
+Référencé par deplacement\+\_\+\+T3(), et prochain\+\_\+pas\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!t3\+\_\+j@{t3\+\_\+j}}
+\index{t3\+\_\+j@{t3\+\_\+j}!thread.\+h@{thread.\+h}}
+\subsubsection[{t3\+\_\+j}]{\setlength{\rightskip}{0pt plus 5cm}int t3\+\_\+j =0}\label{thread_8h_a2abaab027ef8c5aba4299c98b8ce5ff6}
+
+
+Référencé par prochain\+\_\+pas\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!tab\+T1@{tab\+T1}}
+\index{tab\+T1@{tab\+T1}!thread.\+h@{thread.\+h}}
+\subsubsection[{tab\+T1}]{\setlength{\rightskip}{0pt plus 5cm}char tab\+T1[4][2]}\label{thread_8h_a83a7ab050ef5f6001530bab2951d76f4}
+
+
+Référencé par initialise(), et prochain\+\_\+pas\+\_\+\+T1().
+
+\index{thread.\+h@{thread.\+h}!tab\+T2@{tab\+T2}}
+\index{tab\+T2@{tab\+T2}!thread.\+h@{thread.\+h}}
+\subsubsection[{tab\+T2}]{\setlength{\rightskip}{0pt plus 5cm}char tab\+T2[5][2]}\label{thread_8h_a937f8a083d2eb0ddf332cf0e0eaf6a9b}
+
+
+Référencé par initialise(), et prochain\+\_\+pas\+\_\+\+T2().
+
+\index{thread.\+h@{thread.\+h}!tab\+T3@{tab\+T3}}
+\index{tab\+T3@{tab\+T3}!thread.\+h@{thread.\+h}}
+\subsubsection[{tab\+T3}]{\setlength{\rightskip}{0pt plus 5cm}char tab\+T3[5][2]}\label{thread_8h_aa09683f54909b8bde1c6be7b09283531}
+
+
+Référencé par initialise(), et prochain\+\_\+pas\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!time\+\_\+\+T1@{time\+\_\+\+T1}}
+\index{time\+\_\+\+T1@{time\+\_\+\+T1}!thread.\+h@{thread.\+h}}
+\subsubsection[{time\+\_\+\+T1}]{\setlength{\rightskip}{0pt plus 5cm}int time\+\_\+\+T1 =0}\label{thread_8h_afbbe5c8bda3844141662fc6b4a61c041}
+
+
+Référencé par deplacement\+\_\+\+T1(), et time\+\_\+train\+\_\+\+T1().
+
+\index{thread.\+h@{thread.\+h}!time\+\_\+\+T2@{time\+\_\+\+T2}}
+\index{time\+\_\+\+T2@{time\+\_\+\+T2}!thread.\+h@{thread.\+h}}
+\subsubsection[{time\+\_\+\+T2}]{\setlength{\rightskip}{0pt plus 5cm}int time\+\_\+\+T2 =0}\label{thread_8h_abfd7eef7b196e27888a949f66e4a20a8}
+
+
+Référencé par deplacement\+\_\+\+T2(), et time\+\_\+train\+\_\+\+T2().
+
+\index{thread.\+h@{thread.\+h}!time\+\_\+\+T3@{time\+\_\+\+T3}}
+\index{time\+\_\+\+T3@{time\+\_\+\+T3}!thread.\+h@{thread.\+h}}
+\subsubsection[{time\+\_\+\+T3}]{\setlength{\rightskip}{0pt plus 5cm}int time\+\_\+\+T3 =0}\label{thread_8h_a1c1f57fea3191ead973c49e64e089547}
+
+
+Référencé par deplacement\+\_\+\+T3(), et time\+\_\+train\+\_\+\+T3().
+
+\index{thread.\+h@{thread.\+h}!verrou\+\_\+t1@{verrou\+\_\+t1}}
+\index{verrou\+\_\+t1@{verrou\+\_\+t1}!thread.\+h@{thread.\+h}}
+\subsubsection[{verrou\+\_\+t1}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutex\+\_\+t verrou\+\_\+t1 = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}\label{thread_8h_a73cc448791fbdabdf0dbeb4f9dc6e342}
+
+
+Référencé par deplacement\+\_\+\+T1(), et main().
+
+\index{thread.\+h@{thread.\+h}!verrou\+\_\+t2@{verrou\+\_\+t2}}
+\index{verrou\+\_\+t2@{verrou\+\_\+t2}!thread.\+h@{thread.\+h}}
+\subsubsection[{verrou\+\_\+t2}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutex\+\_\+t verrou\+\_\+t2 = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}\label{thread_8h_ae110f945befa6401121aaa8d1cc594db}
+
+
+Référencé par deplacement\+\_\+\+T2(), et main().
+
+\index{thread.\+h@{thread.\+h}!verrou\+\_\+t3@{verrou\+\_\+t3}}
+\index{verrou\+\_\+t3@{verrou\+\_\+t3}!thread.\+h@{thread.\+h}}
+\subsubsection[{verrou\+\_\+t3}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutex\+\_\+t verrou\+\_\+t3 = P\+T\+H\+R\+E\+A\+D\+\_\+\+M\+U\+T\+E\+X\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ER}\label{thread_8h_a22553aa0835b7a564bf85e1a71802d05}
+
+
+Référencé par deplacement\+\_\+\+T3(), et main().
+

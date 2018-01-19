@@ -1,0 +1,161 @@
+\section{Référence du fichier ptr\+\_\+projet\+\_\+rwlock.\+c}
+\label{ptr__projet__rwlock_8c}\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}thread.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de ptr\+\_\+projet\+\_\+rwlock.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf deplacement\+\_\+\+T1} ()
+\item 
+void {\bf deplacement\+\_\+\+T2} ()
+\item 
+void {\bf deplacement\+\_\+\+T3} ()
+\item 
+void $\ast$ {\bf deplacement} (void $\ast$arg)
+\item 
+int {\bf main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf collision\+\_\+\+T1} =false
+\item 
+bool {\bf collision\+\_\+\+T2} =false
+\item 
+bool {\bf collision\+\_\+\+T3} =false
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!deplacement@{deplacement}}
+\index{deplacement@{deplacement}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{deplacement(void $\ast$arg)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ deplacement (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\label{ptr__projet__rwlock_8c_a2b5c951aa3105f80a3fa387727f9eeaf}
+fonction qui va gerer tous les deplacements de tous les trains 
+
+Références deplacement\+\_\+\+T1(), deplacement\+\_\+\+T2(), et deplacement\+\_\+\+T3().
+
+
+
+Référencé par main().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 1
+
+
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!deplacement\+\_\+\+T1@{deplacement\+\_\+\+T1}}
+\index{deplacement\+\_\+\+T1@{deplacement\+\_\+\+T1}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{deplacement\+\_\+\+T1()}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+\+T1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{ptr__projet__rwlock_8c_a048e6ad5e3cd27b0c79476149f67980c}
+fonction qui va gerer les deplacements du premier train 
+
+Références collision\+\_\+\+T1, train\+::liaison1, train\+::liaison2, lock, prochain\+\_\+pas\+\_\+\+T1(), T1, t1\+\_\+i, time\+\_\+\+T1, et time\+\_\+train\+\_\+\+T1().
+
+
+
+Référencé par deplacement(), et time\+\_\+train\+\_\+\+T3().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 2
+
+
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!deplacement\+\_\+\+T2@{deplacement\+\_\+\+T2}}
+\index{deplacement\+\_\+\+T2@{deplacement\+\_\+\+T2}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{deplacement\+\_\+\+T2()}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+\+T2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{ptr__projet__rwlock_8c_ad88c2d8f33c81d70265ea81dc11383d2}
+
+
+Références collision\+\_\+\+T2, train\+::liaison1, train\+::liaison2, lock, prochain\+\_\+pas\+\_\+\+T2(), T2, t2\+\_\+i, time\+\_\+\+T2, et time\+\_\+train\+\_\+\+T2().
+
+
+
+Référencé par deplacement(), et time\+\_\+train\+\_\+\+T3().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 3
+
+
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!deplacement\+\_\+\+T3@{deplacement\+\_\+\+T3}}
+\index{deplacement\+\_\+\+T3@{deplacement\+\_\+\+T3}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{deplacement\+\_\+\+T3()}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+\+T3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{ptr__projet__rwlock_8c_a70930ab85f760e6326787315ced718f2}
+
+
+Références collision\+\_\+\+T3, train\+::liaison1, train\+::liaison2, lock, prochain\+\_\+pas\+\_\+\+T3(), T3, t3\+\_\+i, time\+\_\+\+T3, et time\+\_\+train\+\_\+\+T3().
+
+
+
+Référencé par deplacement(), et time\+\_\+train\+\_\+\+T3().
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 4
+
+
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!main@{main}}
+\index{main@{main}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{main()}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{ptr__projet__rwlock_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Références deplacement(), initialise(), et lock.
+
+
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 5
+
+
+
+
+\subsection{Documentation des variables}
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!collision\+\_\+\+T1@{collision\+\_\+\+T1}}
+\index{collision\+\_\+\+T1@{collision\+\_\+\+T1}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{collision\+\_\+\+T1}]{\setlength{\rightskip}{0pt plus 5cm}bool collision\+\_\+\+T1 =false}\label{ptr__projet__rwlock_8c_ad17da20973da302c6ff61703123ebe66}
+
+
+Référencé par deplacement\+\_\+\+T1().
+
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!collision\+\_\+\+T2@{collision\+\_\+\+T2}}
+\index{collision\+\_\+\+T2@{collision\+\_\+\+T2}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{collision\+\_\+\+T2}]{\setlength{\rightskip}{0pt plus 5cm}bool collision\+\_\+\+T2 =false}\label{ptr__projet__rwlock_8c_ad982c0c833e710b3148388eb1c61dcf0}
+
+
+Référencé par deplacement\+\_\+\+T2().
+
+\index{ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}!collision\+\_\+\+T3@{collision\+\_\+\+T3}}
+\index{collision\+\_\+\+T3@{collision\+\_\+\+T3}!ptr\+\_\+projet\+\_\+rwlock.\+c@{ptr\+\_\+projet\+\_\+rwlock.\+c}}
+\subsubsection[{collision\+\_\+\+T3}]{\setlength{\rightskip}{0pt plus 5cm}bool collision\+\_\+\+T3 =false}\label{ptr__projet__rwlock_8c_a6214bfd511ec664431834cd0530bc664}
+
+
+Référencé par deplacement\+\_\+\+T3().
+
